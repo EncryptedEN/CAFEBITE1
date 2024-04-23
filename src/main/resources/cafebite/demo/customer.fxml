@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cafebite.demo.CustomerController">
-    <Button text="Login" onAction="#handleLogin"/>
-    <Button text="Sign Up" onAction="#handleSignUp"/>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" spacing="50.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="cafebite.demo.CustomerController">
+   <Label contentDisplay="CENTER" prefHeight="47.0" prefWidth="185.0" text="Getting Started!" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+    <Button graphicTextGap="2.0" onAction="#handleLogin" prefHeight="50.0" prefWidth="90.0" text="Login" />
+    <Button layoutX="4.0" layoutY="9.0" onAction="#handleSignUp" prefHeight="50.0" prefWidth="90.0" text="Sign Up" />
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </VBox>
-
-
